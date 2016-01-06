@@ -7,7 +7,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity
+            android:name=".Activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            >
+            <intent-filter>
+                <action android:name="com.kunall17.entryscreenmanager.Activities.MainActivity.LAUNCH" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
