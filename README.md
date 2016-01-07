@@ -25,4 +25,5 @@ Contribute
 Looks
 -------
 More templates to come!
+
 ![Screenshot](https://raw.githubusercontent.com/kunall17/EntryScreenManager/screenshots/screen.png)
