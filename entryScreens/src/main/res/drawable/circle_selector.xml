@@ -10,8 +10,8 @@
 
             <solid android:color="@color/color_selector" />
             <size
-                android:width="15dp"
-                android:height="15dp" />
+                android:width="10dp"
+                android:height="10dp" />
             <stroke
                 android:width="1px"
                 android:color="#fff" />
