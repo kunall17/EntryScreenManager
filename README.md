@@ -26,4 +26,4 @@ Looks
 -------
 More templates to come!
 
-![Screenshot](https://raw.githubusercontent.com/kunall17/EntryScreenManager/screenshots/screen.png)
+<img alt="Screenshot" src="https://raw.githubusercontent.com/kunall17/EntryScreenManager/screenshots/screen.png" width="432" height="712" /> 
