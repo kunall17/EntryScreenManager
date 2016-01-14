@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:onClick="skip_button"
-            android:text="SKIP"
+            android:text="@string/CONTROLS_SKIP"
             android:textColor="@android:color/white" />
 
 
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:onClick="next_button"
-            android:text="NEXT >"
+            android:text="@string/CONTROLS_NEXT"
             android:textColor="@android:color/white" />
     </LinearLayout>
 </LinearLayout>

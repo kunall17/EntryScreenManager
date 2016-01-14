@@ -22,7 +22,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public SectionsPagerAdapter(FragmentManager fm, int pages, Context context) {
         super(fm);
         this.pages = pages;
-        Context context1 = context;
         try {
             talkToActivity = (ContactInterface) context;
         } catch (ClassCastException e) {
@@ -43,14 +42,12 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 talkToActivity.setControlsBackground(Color.parseColor("#2980b9"));
                 return DefaultFragment.init("Entry Screens", "Share this Awesomeness!", R.drawable.phone);
             case 1:
-                GridListFragment gridListFragment = new GridListFragment();
 
-                return gridListFragment;
+                return new GridListFragment();
             case 2:
                 return DefaultFragment.init("It's so easy to use!", "I can easily change colors, Icons.\nAnd its open source!", R.drawable.zxc);
             case 3:
-                DefaultFragment bf2 = new DefaultFragment();
-                return bf2;
+                return new DefaultFragment();
         }
         return null;
     }

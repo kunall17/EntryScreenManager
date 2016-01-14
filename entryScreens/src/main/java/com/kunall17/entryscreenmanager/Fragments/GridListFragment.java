@@ -65,7 +65,7 @@ public class GridListFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_grid_list, container, false);
         RecyclerView recyclerView = (RecyclerView) v.findViewById(R.id.gridListRecyclerView);
-        gridListFragmentAdapter adapter = new gridListFragmentAdapter(getActivity());
+        gridListFragmentAdapter adapter = new gridListFragmentAdapter();
         recyclerView.setAdapter(adapter);
         GridLayoutManager glm = new GridLayoutManager(getActivity(), 2);
         TextView gridListFragmentMasterTitle = (TextView) v.findViewById(R.id.gridListFragmentMasterTitle);

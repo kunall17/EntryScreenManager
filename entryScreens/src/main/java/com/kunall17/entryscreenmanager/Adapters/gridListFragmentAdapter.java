@@ -16,15 +16,13 @@ import com.kunall17.entryscreenmanager.R;
  */
 public class gridListFragmentAdapter extends RecyclerView.Adapter<gridListFragmentHolder> {
 
-    public gridListFragmentAdapter(Context context) {
-        Context context1 = context;
+    public gridListFragmentAdapter() {
     }
 
     @Override
     public gridListFragmentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_list_row, parent, false);
-        gridListFragmentHolder holder = new gridListFragmentHolder(view);
-        return holder;
+        return new gridListFragmentHolder(view);
     }
 
     @Override
