@@ -75,16 +75,16 @@ public class MainActivity extends AppCompatActivity implements ContactInterface 
                         }
 
                         switch (position) {
-                            case 0:
-                                setContainerBackground(Color.parseColor("#3498db"));
-                                setControlsBackground(Color.parseColor("#2980b9"));
+                             case 0:
+                                setContainerBackground(Color.parseColor("#ecf0f1"));
+                                setControlsBackground(Color.parseColor("#c0392b"));
                                 break;
                             case 1:
-                                setContainerBackground(Color.parseColor("#2ecc71"));
-                                setControlsBackground(Color.parseColor("#27ae60"));
+                                setContainerBackground(Color.parseColor("#ecf0f1"));
+                                setControlsBackground(Color.parseColor("#2980b9"));
                                 break;
                             case 2:
-                                setContainerBackground(Color.parseColor("#f1c40f"));
+                                setContainerBackground(Color.parseColor("#ecf0f1"));
                                 setControlsBackground(Color.parseColor("#f39c12"));
                                 break;
                         }
