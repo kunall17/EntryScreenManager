@@ -40,7 +40,7 @@ public class gridListFragmentAdapter extends RecyclerView.Adapter<gridListFragme
 }
 
 class gridListFragmentHolder extends RecyclerView.ViewHolder {
-    TextView gridListView_title;
+    final TextView gridListView_title;
 
     public gridListFragmentHolder(View itemView) {
         super(itemView);

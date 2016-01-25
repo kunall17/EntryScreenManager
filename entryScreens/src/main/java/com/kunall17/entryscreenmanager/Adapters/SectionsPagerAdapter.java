@@ -16,7 +16,7 @@ import com.kunall17.entryscreenmanager.R;
  * Created by kunall17 on 1/5/16.
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
-    private int pages;
+    private final int pages;
     private ContactInterface talkToActivity;
 
     public SectionsPagerAdapter(FragmentManager fm, int pages, Context context) {

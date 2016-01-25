@@ -17,12 +17,13 @@ import android.widget.LinearLayout;
 
 import com.kunall17.entryscreenmanager.Java.ContactInterface;
 import com.kunall17.entryscreenmanager.R;
+
 import com.kunall17.entryscreenmanager.Adapters.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity implements ContactInterface {
 
     private ViewPager mViewPager;
-    private int NUMBER_OF_PAGES = 3;
+    private final int NUMBER_OF_PAGES = 3;
     private Button skip;
     private Button next;
     private LinearLayout main_content;
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements ContactInterface 
                                 break;
                             case 2:
                                 setContainerBackground(Color.parseColor("#ecf0f1"));
-                                setControlsBackground(Color.parseColor("#f39c12"));
+                                setControlsBackground(Color.parseColor("#FF5722"));
                                 break;
                         }
                     }
