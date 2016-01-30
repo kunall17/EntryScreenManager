@@ -38,8 +38,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         Log.d("getItem", "called");
         switch (position) {
             case 0:
-                talkToActivity.setContainerBackground(Color.parseColor("#3498db"));
-                talkToActivity.setControlsBackground(Color.parseColor("#2980b9"));
+                talkToActivity.setContainerBackground(Color.parseColor("#ecf0f1"));
+                talkToActivity.setControlsBackground(Color.parseColor("#c0392b"));
                 return DefaultFragment.init("Entry Screens", "Share this Awesomeness!", R.drawable.phone);
             case 1:
 

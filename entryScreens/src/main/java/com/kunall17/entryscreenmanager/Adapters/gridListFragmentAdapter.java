@@ -1,6 +1,5 @@
 package com.kunall17.entryscreenmanager.Adapters;
 
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +7,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.kunall17.entryscreenmanager.Fragments.GridListFragment;
 import com.kunall17.entryscreenmanager.R;
+
+import java.util.List;
 
 
 /**
@@ -19,9 +21,16 @@ public class gridListFragmentAdapter extends RecyclerView.Adapter<gridListFragme
     public gridListFragmentAdapter() {
     }
 
+    List<GridListFragment.info> infoList;
+
+    public gridListFragmentAdapter(List<GridListFragment.info> infoList) {
+        this.infoList = infoList;
+    }
+
     @Override
     public gridListFragmentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_list_row, parent, false);
+
         return new gridListFragmentHolder(view);
     }
 
@@ -30,21 +39,23 @@ public class gridListFragmentAdapter extends RecyclerView.Adapter<gridListFragme
 //        imageViewRound=(ImageView)findViewById(R.id.imageView_round);
 //        Bitmap icon = BitmapFactory.decodeResource(getResources(),R.drawable.pic1);
 //        imageViewRound.setImageBitmap(icon);
-        holder.gridListView_title.setText("Number-" + position);
+        holder.gridListView_title.setText(infoList.get(position).getText());
+        holder.image.setImageResource(infoList.get(position).getDrawable());
     }
 
     @Override
     public int getItemCount() {
-        return 30;
+        return 5;
     }
 }
 
 class gridListFragmentHolder extends RecyclerView.ViewHolder {
     final TextView gridListView_title;
+    final ImageView image;
 
     public gridListFragmentHolder(View itemView) {
         super(itemView);
-        ImageView image = (ImageView) itemView.findViewById(R.id.gridListImageView);
+        image = (ImageView) itemView.findViewById(R.id.gridListImageView);
         gridListView_title = (TextView) itemView.findViewById(R.id.gridListView_title);
     }
 }
