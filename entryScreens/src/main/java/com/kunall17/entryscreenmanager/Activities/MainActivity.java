@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements ContactInterface 
                         }
 
                         switch (position) {
-                             case 0:
+                            case 0:
                                 setContainerBackground(Color.parseColor("#ecf0f1"));
                                 setControlsBackground(Color.parseColor("#c0392b"));
                                 break;
@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements ContactInterface 
     private void completed() {
 
         Intent intent = new Intent();
+        intent.putExtra("SomeValues", "Hello");
         setResult(Activity.RESULT_OK, intent);
         finish();
     }

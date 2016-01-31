@@ -14,39 +14,39 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    private static int REQUEST_CODE = 435;
 
-        if (requestCode == 1) {
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, final Intent data) {
+
+        if (requestCode == REQUEST_CODE) {
+            setContentView(R.layout.activity_main);
+
             if (resultCode == Activity.RESULT_OK) {
                 //Write your code if result is OK
+                FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+                fab.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Snackbar.make(view, data.getStringExtra("SomeValues"), Snackbar.LENGTH_LONG)
+                                .setAction("Done!", null).show();
+                    }
+                });
             }
             if (resultCode == Activity.RESULT_CANCELED) {
                 //Write your code if there's no result
             }
+            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
         }
-        setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("zxc", "zxc");
-
         Intent i = new Intent(MainActivity.this, com.kunall17.entryscreenmanager.Activities.MainActivity.class);
-        startActivityForResult(i, 1);
+        startActivityForResult(i, REQUEST_CODE);
 
     }
 
