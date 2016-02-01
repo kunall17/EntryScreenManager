@@ -25,7 +25,7 @@ If you want to import to your existing Project
 ```
     compile project(':entryScreens')
 ```
-    to your gradle of existing application (:app) module.
+to your gradle of existing application (:app) module.
 
 * And Use this code to your activity you want to start these screens! (To load this library in start of your activity!)
 
@@ -78,9 +78,7 @@ If you want to import to your existing Project
                 android:theme="@style/AppTheme.NoActionBar">
                 >
                 <action android:name="com.kunall17.entryscreenmanager.Activities.MainActivity.LAUNCH" />
-    
             </activity>
-            
 ```
            
 Contribute
@@ -94,4 +92,4 @@ Looks
 -------
 More templates to come!
 
-<img alt="Screenshot" src="https://raw.githubusercontent.com/kunall17/EntryScreenManager/screenshots/screen.png" width="432" height="712" /> 
+<img alt="Screenshot" src="https://raw.githubusercontent.com/kunall17/EntryScreenManager/screenshots/entryscreen.gif" width="432" height="712" border="5" /> 
