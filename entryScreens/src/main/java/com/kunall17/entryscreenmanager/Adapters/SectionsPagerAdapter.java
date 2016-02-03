@@ -10,6 +10,7 @@ import android.util.Log;
 import com.kunall17.entryscreenmanager.Fragments.DefaultFragment;
 import com.kunall17.entryscreenmanager.Fragments.GridListFragment;
 import com.kunall17.entryscreenmanager.Java.ContactInterface;
+import com.kunall17.entryscreenmanager.Fragments.Templates.LoginFragment;
 import com.kunall17.entryscreenmanager.R;
 
 /**
@@ -33,9 +34,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-        Log.d("getItem", "called");
         switch (position) {
             case 0:
                 talkToActivity.setContainerBackground(Color.parseColor("#ecf0f1"));
@@ -47,7 +45,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 return DefaultFragment.init("It's so easy to use!", "I can easily change colors, Icons.\nAnd its open source!", R.drawable.zxc);
             case 3:
-                return new DefaultFragment();
+                return LoginFragment.init();
         }
         return null;
     }

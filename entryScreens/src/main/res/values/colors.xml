@@ -9,4 +9,9 @@
     <color name="colorBarActive">#5daed4</color>
     <color name="colorBar">#cbe3ed</color>
 
+    <color name="login_primary">#E43F3F</color>
+    <color name="login_primary_dark">#E12929</color>
+    <color name="login_accent">#FFFFFF</color>
+
+    <color name="iron">#CCCCCC</color>
 </resources>

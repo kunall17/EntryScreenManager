@@ -1,11 +1,32 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/login_primary</item>
+        <item name="colorPrimaryDark">@color/login_primary_dark</item>
+        <item name="colorAccent">@color/login_accent</item>
+
+        <item name="android:windowBackground">@color/login_primary</item>
+        <item name="android:colorBackground">@color/login_primary</item>
+        <item name="android:background">@color/login_primary</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+        <item name="android:textColor">@color/login_primary</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="android:colorButtonNormal" tools:targetApi="lollipop">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/login_primary</item>
+        <item name="android:textColorPrimary">@color/login_primary</item>
+        <item name="android:background">@android:color/white</item>
     </style>
 
 </resources>

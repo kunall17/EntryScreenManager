@@ -3,27 +3,24 @@ package com.kunall17.entryscreenmanager.Activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.design.widget.TabLayout;
-import android.support.v7.app.AppCompatActivity;
-
-import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.kunall17.entryscreenmanager.Adapters.SectionsPagerAdapter;
 import com.kunall17.entryscreenmanager.Java.ContactInterface;
 import com.kunall17.entryscreenmanager.R;
-
-import com.kunall17.entryscreenmanager.Adapters.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity implements ContactInterface {
 
     private ViewPager mViewPager;
-    private final int NUMBER_OF_PAGES = 3;
+    private final int NUMBER_OF_PAGES = 4;
     private Button skip;
     private Button next;
     private LinearLayout main_content;
@@ -37,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements ContactInterface 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entry);
         main_content = (LinearLayout) findViewById(R.id.main_content);
-
 
     }
 
@@ -92,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements ContactInterface 
                     }
                 });
 
+
     }
 
     private void completed() {
@@ -138,6 +135,8 @@ public class MainActivity extends AppCompatActivity implements ContactInterface 
         skip.setTextColor(color);
         next.setTextColor(color);
     }
+
+
 
 
 }
