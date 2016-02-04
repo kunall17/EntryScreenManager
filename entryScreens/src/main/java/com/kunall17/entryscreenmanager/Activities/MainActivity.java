@@ -73,17 +73,22 @@ public class MainActivity extends AppCompatActivity implements ContactInterface 
 
                         switch (position) {
                             case 0:
+                                setControlShown(true);
                                 setContainerBackground(Color.parseColor("#ecf0f1"));
                                 setControlsBackground(Color.parseColor("#c0392b"));
                                 break;
                             case 1:
+                                setControlShown(true);
                                 setContainerBackground(Color.parseColor("#ecf0f1"));
                                 setControlsBackground(Color.parseColor("#2980b9"));
                                 break;
                             case 2:
+                                setControlShown(true);
                                 setContainerBackground(Color.parseColor("#ecf0f1"));
                                 setControlsBackground(Color.parseColor("#FF5722"));
                                 break;
+                            case 3:
+                                setControlShown(false);
                         }
                     }
                 });
@@ -136,7 +141,22 @@ public class MainActivity extends AppCompatActivity implements ContactInterface 
         next.setTextColor(color);
     }
 
+    @Override
+    public void setControlShown(Boolean state) {
+        if (state) {
+            controls_layout.setVisibility(View.VISIBLE);
+            next.setVisibility(View.VISIBLE);
+            skip.setVisibility(View.VISIBLE);
+            tabLayout.setVisibility(View.VISIBLE);
 
+        } else {
+            controls_layout.setVisibility(View.GONE);
+            next.setVisibility(View.GONE);
+            skip.setVisibility(View.GONE);
+            tabLayout.setVisibility(View.GONE);
+
+        }
+    }
 
 
 }

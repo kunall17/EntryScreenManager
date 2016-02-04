@@ -6,7 +6,10 @@ package com.kunall17.entryscreenmanager.Java;
 public interface ContactInterface {
 
     void setContainerBackground(int COLOR);
+
     void setControlsBackground(int Color);
+
     void setControlsTextColor(int color);
 
+    void setControlShown(Boolean state);
 }
