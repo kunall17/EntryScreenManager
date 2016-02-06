@@ -93,3 +93,4 @@ Looks
 More templates to come!
 
 <img alt="Screenshot" src="https://raw.githubusercontent.com/kunall17/EntryScreenManager/screenshots/entryscreen.gif" width="432" height="712" border="5" /> 
+<img alt="Screenshot" src="https://raw.githubusercontent.com/kunall17/EntryScreenManager/screenshots/login.png" width="432" height="712" border="5" /> 
