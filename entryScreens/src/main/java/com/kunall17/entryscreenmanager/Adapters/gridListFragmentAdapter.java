@@ -31,6 +31,10 @@ public class gridListFragmentAdapter extends RecyclerView.Adapter<gridListFragme
     public gridListFragmentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_list_row, parent, false);
 
+
+        int height = parent.getMeasuredHeight() / 2;
+        view.setMinimumHeight(height);
+
         return new gridListFragmentHolder(view);
     }
 
