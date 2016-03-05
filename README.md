@@ -70,15 +70,15 @@ to your gradle of existing application (:app) module.
 * And finally add this to your existing (:app) Module AndroidManifest.xml (To define a activity in your manifest!)
 
 ```
-     <activity
-                android:name="com.kunall17.entryscreenmanager.Activities.MainActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_main"
-                android:screenOrientation="portrait"
-                android:theme="@style/AppTheme.NoActionBar">
-                >
-                <action android:name="com.kunall17.entryscreenmanager.Activities.MainActivity.LAUNCH" />
-            </activity>
+<activity
+            android:name="com.kunall17.entryscreenmanager.Activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            
+            <action android:name="com.kunall17.entryscreenmanager.Activities.MainActivity.LAUNCH" />
+</activity>
 ```
            
 Contribute
